@@ -1,11 +1,12 @@
 <!DOCTYPE html>
 <html lang="ru">
 <head>
-  <meta charset="UTF-8">
-  <title>Гостевая страница</title>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="mystyle.css">
+    <title>Гостевая страница</title>
 </head>
 <body>
-    <p>Оставьте свой комментарий!</p>
+    <br><br><h1>Оставьте свой комментарий!</h1><br><br>
     <?php
         $link = mysqli_connect("localhost", "l680592k_table1", "Signeto1111", "l680592k_table1");
         $sql = 'SELECT name, comment FROM visitors';
@@ -13,8 +14,10 @@
         while ($row = mysqli_fetch_array($result)) {
             $name=$row['name'];
             $comment=$row['comment'];
-            print($name);
-            print("<br>".$comment. "<br><br>");
+            print("<div class='container'>
+            <p><span>".$name."</span></p>
+            <p>".$comment."</p>
+            </div>");
         }  
         print( mysqli_connect_error());
          ?>
