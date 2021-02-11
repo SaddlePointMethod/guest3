@@ -1,7 +1,7 @@
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="refresh" content="0; url=/index.php">
-  <title>Новый титул77</title>
+  <title></title>
 </head>
 <?php
 $name=htmlspecialchars($_POST['name']);
@@ -15,7 +15,7 @@ if ($result == false) {
     print("Произошла ошибка при выполнении запроса");
 }
 if ($link == false) {
-    print("мы даже не подключились");
+    print("Мы даже не подключились к базе");
 }
 print( mysqli_connect_error());
 ?>

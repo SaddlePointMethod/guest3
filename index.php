@@ -2,12 +2,11 @@
 <html lang="ru">
 <head>
   <meta charset="UTF-8">
-  <title>Дворянский</title>
+  <title>Гостевая страница</title>
 </head>
 <body>
-    <p>некий текст11</p>
-    <?php 
-        echo date("d");
+    <p>Оставьте свой комментарий!</p>
+    <?php
         $link = mysqli_connect("localhost", "l680592k_table1", "Signeto1111", "l680592k_table1");
         $sql = 'SELECT name, comment FROM visitors';
         $result = mysqli_query($link, $sql);
