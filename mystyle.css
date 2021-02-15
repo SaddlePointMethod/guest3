@@ -1,9 +1,19 @@
 h1 {
     text-align: center;
-    font-size: 30px;
+    font-size: 20px;
 }
+
 body {
-margin:0;
+    margin:0;
+    height: 100%;
+    font-size: 12px;
+}
+
+.all{
+    height: 60%;
+    overflow: auto;
+    margin-left: 10%;
+    margin-right: 10%;
 }
 
 .container {
@@ -12,29 +22,27 @@ margin:0;
     border-radius: 5px;
     padding: 16px;
     margin-top: 16px;
-    margin-left: 10%;
-    margin-right: 10%;
 }
 
 .container span {
-    font-size: 20px;
+    font-size: 14px;
     margin-right: 15px;
 }
 
 
 input[type=text] {
-    padding: 12px; /* Some padding */
-    border: 1px solid #ccc; /* Gray border */
-    border-radius: 4px; /* Rounded borders */
-    margin-top: 6px; /* Add a top margin */
-    margin-bottom: 16px; /* Bottom margin */
-    resize: none;    /* Allow the user to vertically resize the textarea (not horizontally) */
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: none;
     width: 90%;
     margin-left: 5%;
 }
 
 form{
-    border: 2px solid #ccc;
+    border: 2px solid #cccccc;
     background-color: #eeeeee;
     border-radius: 5px;
     margin-left: 10%;
@@ -46,13 +54,11 @@ form{
 
 .name{
     float: left;
-    font-size: 120%;
     width: 50%;
 }
 
 .email{
     float: right;
-    font-size: 120%;
     width: 50%;
 }
 
