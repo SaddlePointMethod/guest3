@@ -3,27 +3,17 @@ h1 {
     font-size: 30px;
 }
 body {
-    margin-left: 10%;
-    margin-right: 10%;
+margin:0;
 }
+
 .container {
     border: 2px solid #ccc;
-    background-color: #eee;
+    background-color: #eeeeee;
     border-radius: 5px;
     padding: 16px;
-    margin: 16px 0
-}
-
-.container::after {
-    content: "";
-    clear: both;
-    display: table;
-}
-
-.container img {
-    float: left;
-    margin-right: 20px;
-    border-radius: 50%;
+    margin-top: 16px;
+    margin-left: 10%;
+    margin-right: 10%;
 }
 
 .container span {
@@ -31,13 +21,41 @@ body {
     margin-right: 15px;
 }
 
-@media (max-width: 500px) {
-    .container {
-        text-align: center;
-    }
-    .container img {
-        margin: auto;
-        float: none;
-        display: block;
-    }
+
+input[type=text] {
+    padding: 12px; /* Some padding */
+    border: 1px solid #ccc; /* Gray border */
+    border-radius: 4px; /* Rounded borders */
+    margin-top: 6px; /* Add a top margin */
+    margin-bottom: 16px; /* Bottom margin */
+    resize: none;    /* Allow the user to vertically resize the textarea (not horizontally) */
+    width: 90%;
+    margin-left: 5%;
+}
+
+form{
+    border: 2px solid #ccc;
+    background-color: #eeeeee;
+    border-radius: 5px;
+    margin-left: 10%;
+    margin-right: 10%;
+    position: fixed;
+    bottom: 0;
+    width: 80%;
+}
+
+.name{
+    float: left;
+    font-size: 120%;
+    width: 50%;
+}
+
+.email{
+    float: right;
+    font-size: 120%;
+    width: 50%;
+}
+
+.comment{
+    width: 100%;
 }
