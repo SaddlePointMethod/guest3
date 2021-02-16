@@ -24,15 +24,15 @@
     <form name="test" method="post" action="input.php">
         <div class='name'>
             <label style="margin-left: 5%;" for="name">Ваше имя</label>
-	<input type="text" id="name" name="name" size="40">
+	        <input type="text" id="name" name="name" size="40">
         </div>
         <div class="email">
-     <label style="margin-left: 5%;" for="email">Ваш email:</label>
-   	<input type="text" id="email" name="email" size="40">
+            <label style="margin-left: 5%;" for="email">Ваш email:</label>
+   	        <input type="text" id="email" name="email" size="40">
    	    </div>
         <div class="comment">
             <label style="margin-left: 2.5%;" for="comment">Комментарий</label>
-        <textarea name="comment" id="comment" cols="40" rows="3" style="width:95%; margin-left: 2.5%; resize: none;"></textarea>
+            <textarea name="comment" id="comment" cols="40" rows="3" style="width:95%; margin-left: 2.5%; resize: none; border: 1px solid #ccc; border-radius: 4px;"></textarea>
         </div>
   	<input type="submit" value="Отправить" style="margin-left: 2.5%">
    	<input type="reset" value="Очистить" style="margin-left: 2.5%">
